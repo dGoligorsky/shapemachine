@@ -1,7 +1,9 @@
+@import url("https://rsms.me/inter/inter.css");
+
 @keyframes fade {
     from {
         opacity: 1;
-        bottom: 16px;
+        bottom: 40px;
     }
 
     to {
@@ -13,23 +15,34 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: "Inter", Helvetica, sans-serif;
 }
 
 canvas {
-    vertical-align: top;
+    padding: 80px 24px 24px 24px;
 }
 
 p {
-    font-family: Helvetica, Arial, sans-serif;
     color: black;
     font-size: 13px;
+}
+
+.projectName {
+    position: fixed;
+    top: 16px;
+    width: 100vw;
+    height: 80px;
+    left: 24px;
+    color: black;
+    font-size: 23px;
+    line-height: 1.25;
 }
 
 .instructions {
     position: absolute;
     width: 100vw;
     height: 24px;
-    bottom: 16px;
+    bottom: 40px;
     text-align: center;
     text-transform: uppercase;
     animation-name: fade;
@@ -44,6 +57,15 @@ p {
 }
 
 @media only screen and (max-width: 376px) {
+
+    canvas {
+        padding: 80px 16px 16px 16px;
+    }
+
+    .projectName {
+        left: 16px;
+    }
+
     .mobile {
         visibility: visible;
     }
