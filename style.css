@@ -16,10 +16,13 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Inter", Helvetica, sans-serif;
+    position: fixed;
+    overflow-y: hidden;
 }
 
 canvas {
     padding: 80px 24px 24px 24px;
+
 }
 
 p {
@@ -61,8 +64,8 @@ p {
 .grainContainer {
     position: absolute;
     z-index: 10;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: calc(100% - 2px);
     padding: 80px 24px 24px 24px;
 }
 
@@ -80,7 +83,6 @@ p {
     }
 
     .grainContainer {
-
         padding: 80px 16px 16px 16px;
     }
 

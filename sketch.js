@@ -1,5 +1,3 @@
-const instructionsTexts = document.getElementsByClassName("instructions");
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 100);
@@ -114,7 +112,7 @@ function deviceShaken() {
   redraw();
 }
 
-function touchEnded() {
+function touchStarted() {
   redraw();
 }
 
