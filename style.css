@@ -1,0 +1,54 @@
+@keyframes fade {
+    from {
+        opacity: 1;
+        bottom: 16px;
+    }
+
+    to {
+        opacity: 0;
+        bottom: 0px;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+    vertical-align: top;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 13px;
+}
+
+.instructions {
+    position: absolute;
+    width: 100vw;
+    height: 24px;
+    bottom: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.mobile {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 376px) {
+    .mobile {
+        visibility: visible;
+    }
+
+    .desktop {
+        visibility: hidden;
+    }
+}
