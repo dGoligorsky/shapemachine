@@ -109,6 +109,7 @@ function draw() {
   frameRate(1 / 10);
 }
 
+// This used to work, but I think browsers and new OS restrictions prevent it from working :( But I'll leave the function here anyway
 function deviceShaken() {
   redraw();
 }
