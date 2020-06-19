@@ -3,11 +3,12 @@ const instructionsTexts = document.getElementsByClassName("instructions");
 function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 100);
+
+  // background(random(0, 100), random(0, 100), random(50, 100));
 }
 
 function draw() {
   // nice color palette + set background (move these to setup to avoid redraws)
-
   background(random(0, 100), random(0, 100), random(50, 100));
 
   noStroke();

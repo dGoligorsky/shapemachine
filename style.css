@@ -79,6 +79,11 @@ p {
         padding: 80px 16px 16px 16px;
     }
 
+    .grainContainer {
+
+        padding: 80px 16px 16px 16px;
+    }
+
     .projectName {
         left: 16px;
     }
